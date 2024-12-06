@@ -79,8 +79,8 @@ header {
 }
 
 .profile-photo {
-    width: 250px; /* Adjusted width */
-    height: 200px; /* Adjusted height */
+    width: 500px; /* Adjusted width */
+    height: 400px; /* Adjusted height */
     object-fit: cover;
     border-radius: 5px;
 }
@@ -92,7 +92,7 @@ header {
 }
 
 .profile-text h1 {
-    color: #333;
+    color: #222;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
