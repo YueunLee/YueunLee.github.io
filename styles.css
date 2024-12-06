@@ -64,6 +64,7 @@ header {
     padding: 30px;
     max-width: 1000px;
     margin: 0 auto;
+    text-align: center;  /* Center content for main section */
 }
 
 h1, h2 {
@@ -77,7 +78,17 @@ p {
     margin-bottom: 20px;
 }
 
-/* Fancy Footer with fixed position */
+/* Add Your Photo to the Main Page */
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 5px solid #ff5c8d;
+    object-fit: cover;
+}
+
+/* Fixed Footer (no hover effect) */
 footer {
     position: fixed;
     bottom: 0;
@@ -88,28 +99,14 @@ footer {
     text-align: center;
     font-size: 1rem;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
 }
 
-footer:hover {
-    background-color: #333;
-}
-
-/* A Fancy hover effect on the footer text */
+/* No hover animation in footer now */
 footer p {
-    transition: transform 0.3s ease-in-out;
+    margin: 0;
 }
 
-footer:hover p {
-    transform: scale(1.1);
-}
-
-/* Fancy animations for content */
+/* Remove text animation for elements */
 h1, h2, p {
-    animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
+    animation: none;
 }
