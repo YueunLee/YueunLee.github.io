@@ -61,17 +61,18 @@ header {
     color: #ff5c8d;
     border-bottom: 2px solid #ff5c8d;
 }
-
 /* Main Content */
 .main-content {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space between profile photo and text */
-    gap: 20px; /* Reduced gap between elements */
+    justify-content: space-between; /* Keeps space between profile photo and text */
+    gap: 20px; /* Adjust gap between elements */
     padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 90%;  /* Increased the width (was 1200px) */
+    margin: 0 auto;  /* Centers the content */
 }
+
+
 
 /* Profile Photo Styling */
 .profile-photo-container {
@@ -84,12 +85,12 @@ header {
     object-fit: cover;
     border-radius: 5px;
 }
-
 /* Profile Text Styling */
 .profile-text {
     flex: 2;
-    max-width: 600px;
+    max-width: 75%;  /* Increased width (was 600px) */
 }
+
 
 .profile-text h1 {
     color: #333;
@@ -120,7 +121,7 @@ header {
 /* Content Styling */
 .content {
     padding: 30px;
-    max-width: 1000px;
+    max-width: 90%;  /* Increased content section width */
     margin: 0 auto;
     text-align: center;
 }
