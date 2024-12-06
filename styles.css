@@ -121,12 +121,12 @@ header {
     margin-bottom: 40px;
 }
 
-.research-category h2 {
+/* .research-category h2 {
     font-size: 2rem;
     color: #444;
     font-weight: 600;
     margin-bottom: 15px;
-}
+} */
 
 .research-items ul {
     padding-left: 20px; /* 왼쪽 여백을 줘서 점이 나타날 공간 확보 */
