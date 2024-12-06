@@ -12,12 +12,14 @@ body {
     color: #222222;
     line-height: 1.6;
     padding-bottom: 70px;  /* Make space for the fixed footer */
+    margin-left: 20px; /* Reduce left margin */
+    margin-right: 20px; /* Reduce right margin */
 }
 
 /* Sticky Header */
 header {
     width: 100%;
-    background-color: #232323;  /* Dark background for header */
+    background-color: #232323;
     color: white;
 }
 
@@ -30,9 +32,9 @@ header {
 }
 
 .logo a {
-    color: #0ff;  /* Light cyan for a high-tech feel */
+    color: #0ff;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.8rem; /* Increased font size for logo */
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -46,24 +48,25 @@ header {
     color: #f2f2f2;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.2rem; /* Increased font size for menu items */
     transition: color 0.3s;
 }
 
 .menu a:hover {
-    color: #ff5c8d;  /* Pinkish neon hover effect */
+    color: #ff5c8d;
 }
 
 .menu a.active {
     color: #ff5c8d;
     border-bottom: 2px solid #ff5c8d;
 }
+
 /* Main Content */
 .main-content {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 30px;
+    justify-content: space-between; /* Space between profile photo and text */
+    gap: 20px; /* Reduced gap between elements */
     padding: 40px;
     max-width: 1200px;
     margin: 0 auto;
@@ -89,12 +92,12 @@ header {
 
 .profile-text h1 {
     color: #333;
-    font-size: 2rem;
+    font-size: 2.5rem; /* Increased font size for the main heading */
     margin-bottom: 20px;
 }
 
 .profile-text p {
-    font-size: 1.1rem;
+    font-size: 1.3rem; /* Increased font size for paragraph text */
     color: #444;
 }
 
@@ -104,12 +107,12 @@ header {
 }
 
 .profile-text section h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Increased font size for section titles */
     color: #222;
 }
 
 .profile-text section p {
-    font-size: 1rem;
+    font-size: 1.2rem; /* Increased font size for contact details */
     color: #555;
 }
 
@@ -118,30 +121,27 @@ header {
     padding: 30px;
     max-width: 1000px;
     margin: 0 auto;
-    text-align: center;  /* Center content for main section */
+    text-align: center;
 }
 
 h1, h2 {
     color: #232323;
     font-weight: 700;
     margin-bottom: 20px;
-    animation: none;  /* Remove sliding animation */
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1.3rem; /* Increased font size for paragraphs */
     margin-bottom: 20px;
-    animation: none;  /* Remove sliding animation */
 }
 
 /* Resize Profile Photo */
 .profile-photo {
-    width: 450px;  /* Increased size (1.5x) */
-    height: 360px; /* Adjusted for rectangle shape */
-    object-fit: cover;  /* Ensures the image fits within the rectangle */
+    width: 450px;
+    height: 360px;
+    object-fit: cover;
     margin-top: 20px;
-    /* Removed border for the pink line */
-    border-radius: 5px; /* Slightly rounded corners for the photo */
+    border-radius: 5px;
 }
 
 /* Fixed Footer (no hover effect) */
@@ -153,7 +153,7 @@ footer {
     color: #e6e6e6;
     padding: 15px 0;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem; /* Increased footer font size */
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -161,10 +161,6 @@ footer p {
     margin: 0;
 }
 
-/* Remove text animation for elements */
-h1, h2, p {
-    animation: none;
-}
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .main-content {
