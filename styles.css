@@ -112,13 +112,14 @@ p {
     line-height: 1.6;
 }
 
+/* Research Items - Points */
 .research-item::before {
-    content: "• "; /* Centered dot */
-    color: #f39c12; /* Warm gold for the dot */
+    content: "•"; /* 점 */
+    color: #f39c12; /* 호박빛 색상 */
     font-size: 1.5rem;
     margin-right: 10px;
-    display: inline-block;
-    vertical-align: middle; /* Vertically center the dot */
+    display: inline-block; /* 점을 인라인 블록으로 표시하여 왼쪽으로 배치 */
+    vertical-align: middle; /* 점을 텍스트와 수평으로 맞춤 */
 }
 
 /* Profile Photo Styling */
