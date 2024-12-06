@@ -41,20 +41,9 @@ body, ul, li {
     color: #ff6f61;
 }
 
-.icons a {
-    margin-left: 1rem;
-    display: inline-block;
-}
-
-.icons img {
-    width: 20px;
-    height: 20px;
-    filter: invert(100%);
-    transition: transform 0.3s;
-}
-
-.icons img:hover {
-    transform: scale(1.2);
+.menu a.active {
+    color: #ff6f61;
+    border-bottom: 2px solid #ff6f61;
 }
 
 /* Sticky Header for Consistency */
@@ -64,14 +53,9 @@ header {
     color: #ffffff;
 }
 
-/* Dark Mode Theme Toggle */
-body.dark {
+footer {
+    text-align: center;
+    padding: 1rem;
     background-color: #1a1a2e;
-    color: #f4f4f9;
-}
-
-/* Active menu link */
-.menu a.active {
-    color: #ff6f61;
-    border-bottom: 2px solid #ff6f61;
+    color: white;
 }
