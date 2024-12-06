@@ -62,7 +62,7 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
-/* Content */
+/* Main Content */
 .content {
     padding: 30px;
     max-width: 90%;
@@ -70,76 +70,58 @@ header {
     text-align: left; /* Left align the content */
 }
 
-h1 {
-    font-size: 2.5rem; /* Larger font size for main title */
-    color: #333333; /* Deep gray */
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 2rem; /* Slightly smaller font size for section titles */
-    color: #6d5959; /* Darker gray with a hint of warmth */
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
-
-/* Research Interests */
-.research-category {
-    margin-bottom: 40px;
-}
-
-.research-category h2 {
-    font-size: 2rem;
-    color: #444;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.research-items {
-    padding-left: 20px;
-}
-
-.research-item {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-/* Research Items - Points */
-.research-item::before {
-    content: "•"; /* 점 */
-    color: #f39c12; /* 호박빛 색상 */
-    font-size: 1.5rem;
-    margin-right: 10px;
-    display: inline-block; /* 점을 인라인 블록으로 표시하여 왼쪽으로 배치 */
-    vertical-align: middle; /* 점을 텍스트와 수평으로 맞춤 */
-}
-
-/* Profile Photo Styling */
-.profile-photo-container {
-    flex: 1;
+.main-content {
     display: flex;
-    justify-content: center; /* 중앙 정렬 */
-    align-items: center; /* 세로 정렬 */
+    gap: 20px; /* Add some space between the photo and text */
+    align-items: center; /* Vertically center the content */
+}
+
+.profile-photo-container {
+    flex: 1; /* Allow photo container to take up 1 part of space */
 }
 
 .profile-photo {
-    width: 500px;  /* 원하는 너비 */
-    height: 500px; /* 원하는 높이 */
-    object-fit: cover; /* 비율 유지하며 잘라내기 */
+    width: 250px;  /* Set desired width */
+    height: 250px; /* Set desired height */
+    object-fit: cover; /* Keep aspect ratio, crop if necessary */
+    border-radius: 8px; /* Optional: round corners for the photo */
+}
+
+.profile-text {
+    flex: 2; /* Allow text container to take up 2 parts of space */
+    max-width: 70%; /* Limit text width */
+}
+
+.profile-text h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.profile-text p {
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+.profile-text section {
+    margin-top: 30px;
+}
+
+.profile-text section h2 {
+    font-size: 1.8rem;
+    color: #222;
+}
+
+.profile-text section p {
+    font-size: 1.2rem;
+    color: #555;
 }
 
 /* Footer */
 footer {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
     background-color: #2a2a2a; /* Dark charcoal gray */
     color: #e6e6e6; /* Light gray text */
