@@ -8,8 +8,8 @@ body, ul, li {
 /* Set smooth font for the entire page */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5; /* Light gray background */
-    color: #333333; /* Dark gray text */
+    background-color: #fafafa; /* Very light beige background */
+    color: #2d2d2d; /* Dark gray text */
     line-height: 1.6;
     padding-bottom: 70px;  /* Space for the fixed footer */
     font-size: 1rem;
@@ -18,7 +18,7 @@ body {
 /* Sticky Header */
 header {
     width: 100%;
-    background-color: #333333;  /* Dark gray header/footer */
+    background-color: #6b6b6b;  /* Medium gray header/footer */
     color: white;
     padding: 15px 0;
 }
@@ -33,7 +33,7 @@ header {
 }
 
 .logo a {
-    color: #ff6f61; /* Soft coral color for the logo */
+    color: #84a98c; /* Full green color for the logo */
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: bold;
@@ -54,12 +54,12 @@ header {
 }
 
 .menu a:hover {
-    color: #f3a2a1; /* Light pink for hover effect */
+    color: #6aab90; /* Light green for hover effect */
 }
 
 .menu a.active {
-    color: #f3a2a1; /* Light pink when active */
-    border-bottom: 2px solid #f3a2a1;
+    color: #6aab90; /* Light green when active */
+    border-bottom: 2px solid #6aab90;
 }
 
 /* Main Content */
@@ -91,7 +91,7 @@ header {
 }
 
 .profile-text h1 {
-    color: #4e4e4e; /* Medium gray for main heading */
+    color: #2d2d2d; /* Dark gray for main heading */
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -107,7 +107,7 @@ header {
 
 .profile-text section h2 {
     font-size: 1.8rem;
-    color: #4e4e4e; /* Medium gray for section headers */
+    color: #2d2d2d; /* Dark gray for section headers */
 }
 
 .profile-text section p {
@@ -126,7 +126,7 @@ header {
 /* Header and content font sizes */
 h1, h2 {
     font-size: 1.8rem;
-    color: #4e4e4e;
+    color: #2d2d2d;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -142,7 +142,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #333333;
+    background-color: #6b6b6b;
     color: #e6e6e6;
     padding: 15px 0;
     text-align: center;
