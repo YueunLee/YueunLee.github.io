@@ -5,37 +5,38 @@ body, ul, li {
     list-style: none;
 }
 
-/* Set smooth font for the entire page */
+/* Set a smooth font for the entire page */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fafafa; /* Very light beige background */
-    color: #2d2d2d; /* Dark gray text */
+    background-color: #e0e0e0;  /* Soft light gray background */
+    color: #222222;
     line-height: 1.6;
-    padding-bottom: 70px;  /* Space for the fixed footer */
-    font-size: 1rem;
+    padding-bottom: 70px;  /* Make space for the fixed footer */
+    font-size: 1rem; /* Set default font size */
 }
 
 /* Sticky Header */
 header {
     width: 100%;
-    background-color: #6b6b6b;  /* Medium gray header/footer */
+    background-color: #2a2a2a;  /* Dark charcoal background for header */
     color: white;
-    padding: 15px 0;
+    padding: 15px 0;  /* Adjusted padding */
 }
 
 .toolbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
+    width: 100%;  /* Ensure it spans full width */
+    max-width: 100%;  /* Ensure no restrictions */
+    padding: 0 20px;  /* Add some padding for spacing */
+    box-sizing: border-box;  /* Include padding in the width calculation */
 }
 
 .logo a {
-    color: #84a98c; /* Full green color for the logo */
+    color: #f39c12;  /* Warm gold for logo */
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Increased font size for logo */
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -46,20 +47,20 @@ header {
 }
 
 .menu a {
-    color: #f2f2f2;
+    color: #f2f2f2;  /* Light gray for menu items */
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Increased font size for menu items */
     transition: color 0.3s;
 }
 
 .menu a:hover {
-    color: #6aab90; /* Light green for hover effect */
+    color: #e67e22;  /* Orange for hover effect */
 }
 
 .menu a.active {
-    color: #6aab90; /* Light green when active */
-    border-bottom: 2px solid #6aab90;
+    color: #e67e22;  /* Orange when active */
+    border-bottom: 2px solid #e67e22;
 }
 
 /* Main Content */
@@ -69,11 +70,12 @@ header {
     justify-content: space-between;
     gap: 20px;
     padding: 40px;
-    max-width: 90%;
+    max-width: 90%;  /* Increased width */
     margin: 0 auto;
-    height: 80vh;
+    height: 80vh; /* Use a percentage of the viewport height */
 }
 
+/* Profile Photo Styling */
 .profile-photo-container {
     flex: 1;
 }
@@ -85,19 +87,21 @@ header {
     border-radius: 5px;
 }
 
+/* Profile Text Styling */
 .profile-text {
     flex: 2;
-    max-width: 75%;
+    max-width: 75%;  /* Increased width (was 600px) */
 }
 
 .profile-text h1 {
-    color: #2d2d2d; /* Dark gray for main heading */
-    font-size: 2.5rem;
+    color: #333333;  /* Deep gray for main heading */
+    font-size: 2.5rem; /* Increased font size for the main heading */
     margin-bottom: 20px;
 }
 
 .profile-text p {
-    font-size: 1.2rem;
+    font-size: 1.2rem;  /* Increase font size */
+    color: #444444; /* Slightly darker color for text */
 }
 
 /* Contact Section */
@@ -106,13 +110,13 @@ header {
 }
 
 .profile-text section h2 {
-    font-size: 1.8rem;
-    color: #2d2d2d; /* Dark gray for section headers */
+    font-size: 1.8rem; /* Increased font size for section titles */
+    color: #333333; /* Deep gray for section headers */
 }
 
 .profile-text section p {
-    font-size: 1.2rem;
-    color: #555555;
+    font-size: 1.2rem; /* Increased font size for contact details */
+    color: #555555; /* Slightly lighter grey for contact details */
 }
 
 /* Content Styling */
@@ -121,32 +125,40 @@ header {
     max-width: 90%;
     margin: 0 auto;
     text-align: center;
+    height: auto; /* Automatically adjust height */
 }
 
 /* Header and content font sizes */
 h1, h2 {
-    font-size: 1.8rem;
-    color: #2d2d2d;
+    font-size: 1.8rem; /* Adjusted for readability */
+    color: #333333;  /* Deep gray for headings */
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1.1rem;  /* Adjusted for readability */
     margin-bottom: 20px;
 }
 
-/* Fixed Footer */
+/* Resize Profile Photo */
+.profile-photo {
+    width: 350px;  /* Adjusted size to fit better */
+    height: 280px; /* Adjusted size */
+}
+
+/* Fixed Footer (no hover effect) */
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #6b6b6b;
+    background-color: #2a2a2a;  /* Same dark gray as header */
     color: #e6e6e6;
     padding: 15px 0;
     text-align: center;
     font-size: 1.2rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
 }
 
 footer p {
