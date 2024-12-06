@@ -58,6 +58,60 @@ header {
     color: #ff5c8d;
     border-bottom: 2px solid #ff5c8d;
 }
+/* Main Content */
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Profile Photo Styling */
+.profile-photo-container {
+    flex: 1;
+}
+
+.profile-photo {
+    width: 225px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Profile Text Styling */
+.profile-text {
+    flex: 2;
+    max-width: 600px;
+}
+
+.profile-text h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.profile-text p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Contact Section */
+.profile-text section {
+    margin-top: 30px;
+}
+
+.profile-text section h2 {
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.profile-text section p {
+    font-size: 1rem;
+    color: #555;
+}
 
 /* Content Styling */
 .content {
@@ -110,4 +164,16 @@ footer p {
 /* Remove text animation for elements */
 h1, h2, p {
     animation: none;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
 }
