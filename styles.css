@@ -5,35 +5,36 @@ body, ul, li {
     list-style: none;
 }
 
+/* 기본 바탕 설정 */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #ecf8f8;
-    color: #222222;
+    background-color: #f5f5f5;  /* 배경색 */
+    color: #333;  /* 기본 텍스트 색상 */
     line-height: 1.6;
-    padding-bottom: 70px;  /* Make space for the fixed footer */
-    font-size: 1rem; /* Set default font size */
+    padding-bottom: 70px;  /* 고정된 푸터를 위한 여백 */
+    font-size: 1rem; /* 기본 폰트 크기 */
 }
 
 /* Sticky Header */
 header {
     width: 100%;
-    background-color: #454545;
+    background-color: #333333;  /* 헤더 배경색 */
     color: white;
-    padding: 15px 0;
-    box-sizing: border-box; /* Include padding in width calculation */
+    padding: 15px 0;  /* 상하 패딩 */
 }
 
 .toolbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* Ensure the toolbar spans the full width */
-    padding: 0 20px;
-    box-sizing: border-box; /* Add padding inside the width */
+    width: 100%;  
+    max-width: 100%;  
+    padding: 0 20px;  /* 좌우 패딩 */
+    box-sizing: border-box;  
 }
 
 .logo a {
-    color: #ef8275;
+    color: #ff6f61;  /* 로고 색상 */
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: bold;
@@ -46,7 +47,7 @@ header {
 }
 
 .menu a {
-    color: #f2f2f2;
+    color: #f2f2f2;  /* 메뉴 항목 색상 */
     text-decoration: none;
     font-weight: 500;
     font-size: 1.2rem;
@@ -54,8 +55,7 @@ header {
 }
 
 .menu a:hover, .menu a.active {
-    color: #fe938c;
-    border-bottom: 2px solid #fe938c;
+    color: #f3a2a1;  /* 클릭 시/hover 색상 */
 }
 
 /* Main Content */
@@ -67,10 +67,10 @@ header {
     padding: 40px;
     max-width: 90%;
     margin: 0 auto;
-    height: 80vh; /* Use a percentage of the viewport height */
+    height: 80vh;
 }
 
-/* Profile Photo Styling */
+/* Profile Photo */
 .profile-photo-container {
     flex: 1;
 }
@@ -82,20 +82,20 @@ header {
     border-radius: 5px;
 }
 
-/* Profile Text Styling */
+/* Profile Text */
 .profile-text {
     flex: 2;
     max-width: 75%;
 }
 
 .profile-text h1 {
-    color: #6d5959;
-    font-size: 2.5rem; /* Increased font size for the main heading */
+    color: #333;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .profile-text p {
-    font-size: 1.2rem;  /* Increase font size */
+    font-size: 1.2rem;
 }
 
 /* Contact Section */
@@ -104,12 +104,12 @@ header {
 }
 
 .profile-text section h2 {
-    font-size: 1.8rem; /* Increased font size for section titles */
-    color: #6d5959;
+    font-size: 1.8rem;
+    color: #222;
 }
 
 .profile-text section p {
-    font-size: 1.2rem; /* Increased font size for contact details */
+    font-size: 1.2rem;
     color: #555;
 }
 
@@ -119,35 +119,35 @@ header {
     max-width: 90%;
     margin: 0 auto;
     text-align: center;
-    height: auto; /* Automatically adjust height */
+    height: auto;
 }
 
-/* Header and content font sizes */
+/* Header and Section Titles (h1, h2) */
 h1, h2 {
-    font-size: 1.8rem; /* Adjusted for readability */
-    color: #232323;
+    font-size: 1.8rem;  
+    color: #4e4e4e;  /* 섹션 제목 색상 */
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 p {
-    font-size: 1.1rem;  /* Adjusted for readability */
+    font-size: 1.1rem;
     margin-bottom: 20px;
 }
 
 /* Resize Profile Photo */
 .profile-photo {
-    width: 350px;  /* Adjusted size to fit better */
-    height: 280px; /* Adjusted size */
+    width: 350px;
+    height: 280px;
 }
 
-/* Fixed Footer (no hover effect) */
+/* Fixed Footer */
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #454545;
+    background-color: #333333;  /* 푸터 배경색 */
     color: #e6e6e6;
     padding: 15px 0;
     text-align: center;
@@ -169,13 +169,5 @@ footer p {
     .profile-photo {
         width: 150px;
         height: 150px;
-    }
-
-    h1, h2 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1rem;
     }
 }
