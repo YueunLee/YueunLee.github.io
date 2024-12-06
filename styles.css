@@ -11,7 +11,7 @@ body {
     color: #222222;
     line-height: 1.6;
     padding-bottom: 70px;  /* Make space for the fixed footer */
-    font-size: 1rem; /* Set default font size */
+    font-size: 1.1rem; /* Set default font size */
 }
 
 /* Sticky Header */
@@ -35,7 +35,7 @@ header {
 .logo a {
     color: #0ff;
     text-decoration: none;
-    font-size: 1.8rem; /* Increased font size for logo */
+    font-size: 2rem; /* Increased font size for logo */
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -61,19 +61,18 @@ header {
     color: #ff5c8d;
     border-bottom: 2px solid #ff5c8d;
 }
+
+/* Main Content */
 .main-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 30px;
     padding: 40px;
     max-width: 90%;  /* Increased width */
     margin: 0 auto;
     height: 80vh; /* Use a percentage of the viewport height */
 }
-
-
-
 
 /* Profile Photo Styling */
 .profile-photo-container {
@@ -81,27 +80,26 @@ header {
 }
 
 .profile-photo {
-    width: 225px;
-    height: 180px;
+    width: 250px; /* Adjusted width */
+    height: 200px; /* Adjusted height */
     object-fit: cover;
     border-radius: 5px;
 }
+
 /* Profile Text Styling */
 .profile-text {
     flex: 2;
-    max-width: 75%;  /* Increased width (was 600px) */
+    max-width: 75%;
 }
-
 
 .profile-text h1 {
     color: #333;
-    font-size: 2.5rem; /* Increased font size for the main heading */
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-/* Profile Text Styling */
 .profile-text p {
-    font-size: 1.2rem;  /* Increase font size */
+    font-size: 1.2rem;
 }
 
 /* Contact Section */
@@ -110,12 +108,12 @@ header {
 }
 
 .profile-text section h2 {
-    font-size: 1.8rem; /* Increased font size for section titles */
+    font-size: 1.8rem;
     color: #222;
 }
 
 .profile-text section p {
-    font-size: 1.2rem; /* Increased font size for contact details */
+    font-size: 1.2rem;
     color: #555;
 }
 
@@ -124,30 +122,53 @@ header {
     padding: 30px;
     max-width: 90%;
     margin: 0 auto;
-    text-align: center;
-    height: auto; /* Automatically adjust height */
+    text-align: left;
 }
 
 /* Header and content font sizes */
 h1, h2 {
-    font-size: 1.8rem; /* Adjusted for readability */
+    font-size: 2rem;
     color: #232323;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 p {
-    font-size: 1.1rem;  /* Adjusted for readability */
+    font-size: 1.1rem;
     margin-bottom: 20px;
 }
 
-/* Resize Profile Photo */
-.profile-photo {
-    width: 350px;  /* Adjusted size to fit better */
-    height: 280px; /* Adjusted size */
+/* Research Interests */
+.research-category {
+    margin-bottom: 40px;
 }
 
-/* Fixed Footer (no hover effect) */
+.research-category h2 {
+    font-size: 2rem;
+    color: #444;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.research-items {
+    padding-left: 20px;
+}
+
+.research-item {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.research-item::before {
+    content: "• ";
+    color: #ff5c8d;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Fixed Footer */
 footer {
     position: fixed;
     bottom: 0;
@@ -160,6 +181,7 @@ footer {
     font-size: 1.2rem;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
 }
+
 footer p {
     margin: 0;
 }
@@ -174,5 +196,13 @@ footer p {
     .profile-photo {
         width: 150px;
         height: 150px;
+    }
+
+    .profile-text h1 {
+        font-size: 2rem;
+    }
+
+    .profile-text p {
+        font-size: 1rem;
     }
 }
