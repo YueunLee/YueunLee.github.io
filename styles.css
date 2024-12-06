@@ -61,16 +61,17 @@ header {
     color: #ff5c8d;
     border-bottom: 2px solid #ff5c8d;
 }
-/* Main Content */
 .main-content {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Keeps space between profile photo and text */
-    gap: 20px; /* Adjust gap between elements */
+    justify-content: space-between;
+    gap: 20px;
     padding: 40px;
-    max-width: 90%;  /* Increased the width (was 1200px) */
-    margin: 0 auto;  /* Centers the content */
+    max-width: 90%;  /* Increased width */
+    margin: 0 auto;
+    height: 80vh; /* Use a percentage of the viewport height */
 }
+
 
 
 
@@ -121,9 +122,10 @@ header {
 /* Content Styling */
 .content {
     padding: 30px;
-    max-width: 90%;  /* Increased content section width */
+    max-width: 90%;
     margin: 0 auto;
     text-align: center;
+    height: auto; /* Automatically adjust height */
 }
 
 /* Header and content font sizes */
@@ -150,7 +152,7 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%; /* Ensures the footer spans the full width */
+    width: 100%;
     background-color: #232323;
     color: #e6e6e6;
     padding: 15px 0;
