@@ -71,21 +71,23 @@ h1, h2 {
     color: #232323;
     font-weight: 700;
     margin-bottom: 20px;
+    animation: none;  /* Remove sliding animation */
 }
 
 p {
     font-size: 1.1rem;
     margin-bottom: 20px;
+    animation: none;  /* Remove sliding animation */
 }
 
-/* Add Your Photo to the Main Page */
+/* Resize Profile Photo */
 .profile-photo {
-    width: 200px;
-    height: 200px;
+    width: 150px;  /* Adjusted size */
+    height: 150px; /* Adjusted size */
     border-radius: 50%;
     margin-top: 20px;
     border: 5px solid #ff5c8d;
-    object-fit: cover;
+    object-fit: cover;  /* Ensures the image fits well */
 }
 
 /* Fixed Footer (no hover effect) */
@@ -101,7 +103,6 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* No hover animation in footer now */
 footer p {
     margin: 0;
 }
