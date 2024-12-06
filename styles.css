@@ -81,8 +81,8 @@ header {
 }
 
 .profile-photo {
-    width: 250px;  /* Set desired width */
-    height: 250px; /* Set desired height */
+    width: 450px;  /* Set desired width */
+    height: 450px; /* Set desired height */
     object-fit: cover; /* Keep aspect ratio, crop if necessary */
     border-radius: 8px; /* Optional: round corners for the photo */
 }
@@ -116,7 +116,42 @@ header {
     font-size: 1.2rem;
     color: #555;
 }
+/* Research Items */
+.research-category {
+    margin-bottom: 40px;
+}
 
+.research-category h2 {
+    font-size: 2rem;
+    color: #444;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.research-items ul {
+    padding-left: 20px; /* 왼쪽 여백을 줘서 점이 나타날 공간 확보 */
+}
+
+.research-item {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.research-items li {
+    position: relative;
+    padding-left: 25px; /* 점을 왼쪽 여백에 맞춰 배치 */
+}
+
+.research-items li::before {
+    content: "• "; /* 가운데 정렬된 점 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f39c12; /* 금색 점 */
+    font-size: 1.5rem;
+}
 /* Footer */
 footer {
     position: fixed;
