@@ -8,7 +8,7 @@ body, ul, li {
 /* Set a smooth font for the entire page */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #e0e0e0;  /* Soft light gray background */
+    background-color: #ffffff;  /* White background */
     color: #222222;
     line-height: 1.6;
     padding-bottom: 70px;  /* Make space for the fixed footer */
@@ -18,7 +18,7 @@ body {
 /* Sticky Header */
 header {
     width: 100%;
-    background-color: #2a2a2a;  /* Dark charcoal background for header */
+    background-color: #333333;  /* Dark gray background for header */
     color: white;
     padding: 15px 0;  /* Adjusted padding */
 }
@@ -34,7 +34,7 @@ header {
 }
 
 .logo a {
-    color: #f39c12;  /* Warm gold for logo */
+    color: #007bff;  /* Bright blue for logo */
     text-decoration: none;
     font-size: 1.8rem; /* Increased font size for logo */
     font-weight: bold;
@@ -55,12 +55,12 @@ header {
 }
 
 .menu a:hover {
-    color: #e67e22;  /* Orange for hover effect */
+    color: #0056b3;  /* Dark blue for hover effect */
 }
 
 .menu a.active {
-    color: #e67e22;  /* Orange when active */
-    border-bottom: 2px solid #e67e22;
+    color: #0056b3;  /* Dark blue when active */
+    border-bottom: 2px solid #0056b3;
 }
 
 /* Main Content */
@@ -94,14 +94,14 @@ header {
 }
 
 .profile-text h1 {
-    color: #333333;  /* Deep gray for main heading */
+    color: #444444;  /* Light gray for main heading */
     font-size: 2.5rem; /* Increased font size for the main heading */
     margin-bottom: 20px;
 }
 
 .profile-text p {
     font-size: 1.2rem;  /* Increase font size */
-    color: #444444; /* Slightly darker color for text */
+    color: #555555; /* Slightly darker color for text */
 }
 
 /* Contact Section */
@@ -111,7 +111,7 @@ header {
 
 .profile-text section h2 {
     font-size: 1.8rem; /* Increased font size for section titles */
-    color: #333333; /* Deep gray for section headers */
+    color: #444444; /* Light gray for section headers */
 }
 
 .profile-text section p {
@@ -131,7 +131,7 @@ header {
 /* Header and content font sizes */
 h1, h2 {
     font-size: 1.8rem; /* Adjusted for readability */
-    color: #333333;  /* Deep gray for headings */
+    color: #444444;  /* Light gray for headings */
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -153,7 +153,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #2a2a2a;  /* Same dark gray as header */
+    background-color: #333333;  /* Same dark gray as header */
     color: #e6e6e6;
     padding: 15px 0;
     text-align: center;
