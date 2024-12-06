@@ -70,11 +70,18 @@ header {
     text-align: left; /* Left align the content */
 }
 
-h1, h2 {
-    font-size: 2rem; /* Adjusted for readability */
+h1 {
+    font-size: 2.5rem; /* Larger font size for main title */
     color: #333333; /* Deep gray */
     font-weight: 700;
     margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem; /* Slightly smaller font size for section titles */
+    color: #6d5959; /* Darker gray with a hint of warmth */
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
 p {
@@ -106,13 +113,13 @@ p {
 }
 
 .research-item::before {
-    content: "• ";
-    color: #ff5c8d;
+    content: "• "; /* Centered dot */
+    color: #f39c12; /* Warm gold for the dot */
     font-size: 1.5rem;
     margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle; /* Vertically center the dot */
 }
-
-
 
 /* Profile Photo Styling */
 .profile-photo-container {
