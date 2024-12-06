@@ -5,57 +5,111 @@ body, ul, li {
     list-style: none;
 }
 
-/* Toolbar Styling */
+/* Set a smooth font for the entire page */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #222222;
+    line-height: 1.6;
+    padding-bottom: 70px;  /* Make space for the fixed footer */
+}
+
+/* Sticky Header */
+header {
+    width: 100%;
+    background-color: #232323;  /* Dark background for header */
+    color: white;
+}
+
 .toolbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1a1a2e;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding: 15px 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo a {
-    color: #ffffff;
+    color: #0ff;  /* Light cyan for a high-tech feel */
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 .menu {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .menu a {
-    color: #ffffff;
+    color: #f2f2f2;
     text-decoration: none;
     font-weight: 500;
+    font-size: 1rem;
     transition: color 0.3s;
 }
 
 .menu a:hover {
-    color: #ff6f61;
+    color: #ff5c8d;  /* Pinkish neon hover effect */
 }
 
 .menu a.active {
-    color: #ff6f61;
-    border-bottom: 2px solid #ff6f61;
+    color: #ff5c8d;
+    border-bottom: 2px solid #ff5c8d;
 }
 
-/* Sticky Header for Consistency */
-header {
-    width: 100%;
-    background-color: #1a1a2e;
-    color: #ffffff;
+/* Content Styling */
+.content {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
+h1, h2 {
+    color: #232323;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Fancy Footer with fixed position */
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #232323;
+    color: #e6e6e6;
+    padding: 15px 0;
     text-align: center;
-    padding: 1rem;
-    background-color: #1a1a2e;
-    color: white;
+    font-size: 1rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+footer:hover {
+    background-color: #333;
+}
+
+/* A Fancy hover effect on the footer text */
+footer p {
+    transition: transform 0.3s ease-in-out;
+}
+
+footer:hover p {
+    transform: scale(1.1);
+}
+
+/* Fancy animations for content */
+h1, h2, p {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
