@@ -136,8 +136,8 @@ p {
 
 /* Resize Profile Photo */
 .profile-photo {
-    width: 225px;  /* Increased size (1.5x) */
-    height: 180px; /* Adjusted for rectangle shape */
+    width: 450px;  /* Increased size (1.5x) */
+    height: 360px; /* Adjusted for rectangle shape */
     object-fit: cover;  /* Ensures the image fits within the rectangle */
     margin-top: 20px;
     /* Removed border for the pink line */
