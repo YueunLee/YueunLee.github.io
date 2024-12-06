@@ -5,15 +5,13 @@ body, ul, li {
     list-style: none;
 }
 
-/* Set a smooth font for the entire page */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #222222;
     line-height: 1.6;
     padding-bottom: 70px;  /* Make space for the fixed footer */
-    margin-left: 20px; /* Reduce left margin */
-    margin-right: 20px; /* Reduce right margin */
+    font-size: 1rem; /* Set default font size */
 }
 
 /* Sticky Header */
@@ -100,9 +98,9 @@ header {
     margin-bottom: 20px;
 }
 
+/* Profile Text Styling */
 .profile-text p {
-    font-size: 1.3rem; /* Increased font size for paragraph text */
-    color: #444;
+    font-size: 1.2rem;  /* Increase font size */
 }
 
 /* Contact Section */
@@ -128,24 +126,23 @@ header {
     text-align: center;
 }
 
+/* Header and content font sizes */
 h1, h2 {
+    font-size: 1.8rem; /* Adjusted for readability */
     color: #232323;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 p {
-    font-size: 1.3rem; /* Increased font size for paragraphs */
+    font-size: 1.1rem;  /* Adjusted for readability */
     margin-bottom: 20px;
 }
 
 /* Resize Profile Photo */
 .profile-photo {
-    width: 450px;
-    height: 360px;
-    object-fit: cover;
-    margin-top: 20px;
-    border-radius: 5px;
+    width: 350px;  /* Adjusted size to fit better */
+    height: 280px; /* Adjusted size */
 }
 
 /* Fixed Footer (no hover effect) */
