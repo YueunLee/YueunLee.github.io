@@ -82,12 +82,12 @@ p {
 
 /* Resize Profile Photo */
 .profile-photo {
-    width: 150px;  /* Adjusted size */
-    height: 150px; /* Adjusted size */
-    border-radius: 50%;
+    width: 225px;  /* Increased size (1.5x) */
+    height: 180px; /* Adjusted for rectangle shape */
+    object-fit: cover;  /* Ensures the image fits within the rectangle */
     margin-top: 20px;
-    border: 5px solid #ff5c8d;
-    object-fit: cover;  /* Ensures the image fits well */
+    /* Removed border for the pink line */
+    border-radius: 5px; /* Slightly rounded corners for the photo */
 }
 
 /* Fixed Footer (no hover effect) */
