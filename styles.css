@@ -5,38 +5,37 @@ body, ul, li {
     list-style: none;
 }
 
-/* Set a smooth font for the entire page */
+/* Set smooth font for the entire page */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #ecf8f8; /* Light background color */
-    color: #222222;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333333; /* Dark gray text */
     line-height: 1.6;
-    padding-bottom: 70px;  /* Make space for the fixed footer */
-    font-size: 1rem; /* Set default font size */
+    padding-bottom: 70px;  /* Space for the fixed footer */
+    font-size: 1rem;
 }
 
 /* Sticky Header */
 header {
     width: 100%;
-    background-color: #454545;  /* Dark background for header */
+    background-color: #333333;  /* Dark gray header/footer */
     color: white;
-    padding: 15px 0;  /* Adjusted padding */
+    padding: 15px 0;
 }
 
 .toolbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;  /* Ensure it spans full width */
-    max-width: 100%;  /* Ensure no restrictions */
-    padding: 0 20px;  /* Add some padding for spacing */
-    box-sizing: border-box;  /* Include padding in the width calculation */
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .logo a {
-    color: #ef8275;  /* Light coral for logo */
+    color: #ff6f61; /* Soft coral color for the logo */
     text-decoration: none;
-    font-size: 1.8rem; /* Increased font size for logo */
+    font-size: 1.8rem;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -47,20 +46,20 @@ header {
 }
 
 .menu a {
-    color: #f2f2f2;  /* Light grey for menu items */
+    color: #f2f2f2;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.2rem; /* Increased font size for menu items */
+    font-size: 1.2rem;
     transition: color 0.3s;
 }
 
 .menu a:hover {
-    color: #fe938c;  /* Light coral for hover effect */
+    color: #f3a2a1; /* Light pink for hover effect */
 }
 
 .menu a.active {
-    color: #fe938c;  /* Light coral when active */
-    border-bottom: 2px solid #fe938c;
+    color: #f3a2a1; /* Light pink when active */
+    border-bottom: 2px solid #f3a2a1;
 }
 
 /* Main Content */
@@ -70,12 +69,11 @@ header {
     justify-content: space-between;
     gap: 20px;
     padding: 40px;
-    max-width: 90%;  /* Increased width */
+    max-width: 90%;
     margin: 0 auto;
-    height: 80vh; /* Use a percentage of the viewport height */
+    height: 80vh;
 }
 
-/* Profile Photo Styling */
 .profile-photo-container {
     flex: 1;
 }
@@ -87,21 +85,19 @@ header {
     border-radius: 5px;
 }
 
-/* Profile Text Styling */
 .profile-text {
     flex: 2;
-    max-width: 75%;  /* Increased width (was 600px) */
+    max-width: 75%;
 }
 
 .profile-text h1 {
-    color: #6d5959;  /* Medium brown for heading */
-    font-size: 2.5rem; /* Increased font size for the main heading */
+    color: #4e4e4e; /* Medium gray for main heading */
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .profile-text p {
-    font-size: 1.2rem;  /* Increase font size */
-    color: #444444; /* Slightly darker color for text */
+    font-size: 1.2rem;
 }
 
 /* Contact Section */
@@ -110,13 +106,13 @@ header {
 }
 
 .profile-text section h2 {
-    font-size: 1.8rem; /* Increased font size for section titles */
-    color: #6d5959; /* Same brown color for section headers */
+    font-size: 1.8rem;
+    color: #4e4e4e; /* Medium gray for section headers */
 }
 
 .profile-text section p {
-    font-size: 1.2rem; /* Increased font size for contact details */
-    color: #555555; /* Slightly lighter grey for contact details */
+    font-size: 1.2rem;
+    color: #555555;
 }
 
 /* Content Styling */
@@ -125,40 +121,32 @@ header {
     max-width: 90%;
     margin: 0 auto;
     text-align: center;
-    height: auto; /* Automatically adjust height */
 }
 
 /* Header and content font sizes */
 h1, h2 {
-    font-size: 1.8rem; /* Adjusted for readability */
-    color: #6d5959;  /* Medium brown for headings */
+    font-size: 1.8rem;
+    color: #4e4e4e;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 p {
-    font-size: 1.1rem;  /* Adjusted for readability */
+    font-size: 1.1rem;
     margin-bottom: 20px;
 }
 
-/* Resize Profile Photo */
-.profile-photo {
-    width: 350px;  /* Adjusted size to fit better */
-    height: 280px; /* Adjusted size */
-}
-
-/* Fixed Footer (no hover effect) */
+/* Fixed Footer */
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #454545;  /* Same dark grey as header */
+    background-color: #333333;
     color: #e6e6e6;
     padding: 15px 0;
     text-align: center;
     font-size: 1.2rem;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
 }
 
 footer p {
