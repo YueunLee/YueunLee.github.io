@@ -69,3 +69,9 @@ body.dark {
     background-color: #1a1a2e;
     color: #f4f4f9;
 }
+
+/* Active menu link */
+.menu a.active {
+    color: #ff6f61;
+    border-bottom: 2px solid #ff6f61;
+}
