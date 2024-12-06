@@ -1,51 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav class="toolbar">
-            <div class="logo">
-                <a href="index.html">Your Name</a>
-            </div>
-            <ul class="menu">
-                <li><a href="index.html" class="active">About Me</a></li>
-                <li><a href="research.html">Research Interests</a></li>
-                <li><a href="publications.html">Publications</a></li>
-            </ul>
-        </nav>
-    </header>
+/* General Reset */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-    <main class="content">
-        <!-- Main content container -->
-        <div class="main-content">
-            <!-- Left: Profile Photo -->
-            <div class="profile-photo-container">
-                <img src="your-photo.jpg" alt="Your Photo" class="profile-photo">
-            </div>
+/* Set a smooth font for the entire page */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #222222;
+    line-height: 1.6;
+    padding-bottom: 70px;  /* Make space for the fixed footer */
+}
 
-            <!-- Right: Content (Name, Intro, etc.) -->
-            <div class="profile-text">
-                <h1>About Me</h1>
-                <p>
-                    Welcome! I am an aspiring researcher in applied mathematics and computational sciences. I am passionate about leveraging mathematical tools to solve complex real-world problems.
-                </p>
-                <section>
-                    <h2>Contact</h2>
-                    <p>Email: yourname@example.com</p>
-                    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-                </section>
-            </div>
-        </div>
-    </main>
+/* Sticky Header */
+header {
+    width: 100%;
+    background-color: #232323;  /* Dark background for header */
+    color: white;
+}
 
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+    color: #0ff;  /* Light cyan for a high-tech feel */
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ff5c8d;  /* Pinkish neon hover effect */
+}
+
+.menu a.active {
+    color: #ff5c8d;
+    border-bottom: 2px solid #ff5c8d;
+}
+
+/* Content Styling */
+.content {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;  /* Center content for main section */
+}
+
+h1, h2 {
+    color: #232323;
+    font-weight: 700;
+    margin-bottom: 20px;
+    animation: none;  /* Remove sliding animation */
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    animation: none;  /* Remove sliding animation */
+}
+
+/* Resize Profile Photo */
+.profile-photo {
+    width: 225px;  /* Increased size (1.5x) */
+    height: 180px; /* Adjusted for rectangle shape */
+    object-fit: cover;  /* Ensures the image fits within the rectangle */
+    margin-top: 20px;
+    /* Removed border for the pink line */
+    border-radius: 5px; /* Slightly rounded corners for the photo */
+}
+
+/* Fixed Footer (no hover effect) */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #232323;
+    color: #e6e6e6;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Remove text animation for elements */
+h1, h2, p {
+    animation: none;
+}
