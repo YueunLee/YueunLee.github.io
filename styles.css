@@ -1,40 +1,42 @@
+<style>
 /* General Reset */
 body, ul, li {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
+/* Set a smooth font for the entire page */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ecf8f8;
     color: #222222;
     line-height: 1.6;
-    padding-bottom: 70px;  /* Make space for the fixed footer */
-    font-size: 1.1rem; /* Set default font size */
+    padding-bottom: 70px;
+    font-size: 1rem;
 }
 
 /* Sticky Header */
 header {
     width: 100%;
-    background-color: #232323;
+    background-color: #454545;
     color: white;
-    padding: 15px 0;  /* Adjusted padding */
+    padding: 15px 0;
 }
 
 .toolbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;  /* Ensure it spans full width */
-    max-width: 100%;  /* Ensure no restrictions */
-    padding: 0 20px;  /* Add some padding for spacing */
-    box-sizing: border-box;  /* Include padding in the width calculation */
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .logo a {
-    color: #ff5c8d;
+    color: #ef8275;
     text-decoration: none;
-    font-size: 2rem; /* Increased font size for logo */
+    font-size: 1.8rem;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -48,17 +50,13 @@ header {
     color: #f2f2f2;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.2rem; /* Increased font size for menu items */
+    font-size: 1.2rem;
     transition: color 0.3s;
 }
 
-.menu a:hover {
-    color: #ff5c8d;
-}
-
-.menu a.active {
-    color: #ff5c8d;
-    border-bottom: 2px solid #ff5c8d;
+.menu a:hover, .menu a.active {
+    color: #fe938c;
+    border-bottom: 2px solid #fe938c;
 }
 
 /* Main Content */
@@ -66,33 +64,30 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
     padding: 40px;
-    max-width: 90%;  /* Increased width */
+    max-width: 90%;
     margin: 0 auto;
-    height: 80vh; /* Use a percentage of the viewport height */
 }
 
-/* Profile Photo Styling */
 .profile-photo-container {
     flex: 1;
 }
 
 .profile-photo {
-    width: 500px; /* Adjusted width */
-    height: 400px; /* Adjusted height */
+    width: 225px;
+    height: 180px;
     object-fit: cover;
     border-radius: 5px;
 }
 
-/* Profile Text Styling */
 .profile-text {
     flex: 2;
     max-width: 75%;
 }
 
 .profile-text h1 {
-    color: #333;
+    color: #6d5959;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -101,14 +96,13 @@ header {
     font-size: 1.2rem;
 }
 
-/* Contact Section */
 .profile-text section {
     margin-top: 30px;
 }
 
 .profile-text section h2 {
     font-size: 1.8rem;
-    color: #222;
+    color: #6d5959;
 }
 
 .profile-text section p {
@@ -121,13 +115,13 @@ header {
     padding: 30px;
     max-width: 90%;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
+    height: auto;
 }
 
-/* Header and content font sizes */
 h1, h2 {
-    font-size: 2rem;
-    color: #232323;
+    font-size: 1.8rem;
+    color: #6d5959;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -137,43 +131,13 @@ p {
     margin-bottom: 20px;
 }
 
-/* Research Interests */
-.research-category {
-    margin-bottom: 40px;
-}
-
-.research-category h2 {
-    font-size: 2rem;
-    color: #444;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.research-items {
-    padding-left: 20px;
-}
-
-.research-item {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-.research-item::before {
-    content: "• ";
-    color: #ff5c8d;
-    font-size: 1.5rem;
-    margin-right: 10px;
-}
-
 /* Fixed Footer */
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #232323;
+    background-color: #454545;
     color: #e6e6e6;
     padding: 15px 0;
     text-align: center;
@@ -196,12 +160,5 @@ footer p {
         width: 150px;
         height: 150px;
     }
-
-    .profile-text h1 {
-        font-size: 2rem;
-    }
-
-    .profile-text p {
-        font-size: 1rem;
-    }
 }
+</style>
